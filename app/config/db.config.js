@@ -1,5 +1,6 @@
 module.exports = {
   HOST: "pintrest-spa.database.windows.net",
+  port: '1433',
   USER: "zaidabdalkarim",
   PASSWORD: "Azswsixllo9.",
   DB: "newdb",
