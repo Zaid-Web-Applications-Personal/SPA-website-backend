@@ -1,6 +1,6 @@
 module.exports = {
-  HOST: "pintrest-sql-db.mysql.database.azure.com",
-  USER: "zaidabdalkarim@pintrest-sql-db",
+  HOST: "pintrest-sql-database.mysql.database.azure.com",
+  USER: "zaidabdalkarim@pintrest-sql-database",
   port: '3306',
   PASSWORD: "Azswsixllo9.",
   DB: "newdb",
