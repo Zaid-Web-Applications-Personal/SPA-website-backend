@@ -52,7 +52,7 @@ exports.login = (req, res) => {
       expiresIn: 86400 // expires in 24 hours
     });
 
-    res.status(200).send({ auth: true, token: token, userId: user });
+    res.status(200).send({ auth: true, token: token, user: {userId: user.id, username: user.name} });
 
   }).catch(err => {
     return res.status(404).send('No user found.');
