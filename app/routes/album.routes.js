@@ -8,7 +8,7 @@ module.exports = app => {
 
   router.post("/", VerifyToken, album.createAlbum);
 
-  router.get("/", verify, album.findAllAlbums);
+  router.post("/", verify, album.findAllAlbums);
 
   router.get("/me", VerifyToken, album.me);
 
