@@ -42,7 +42,7 @@ exports.createImage = (req, res) => {
 };
 
 exports.findAllImages = (req, res) => {
-  Image.findAll({include: [Album], where: {albumId: req.body.id}})
+  Image.findAll({include: [Album], where: {albumId: req.params.id}})
     .then(data => {
       res.send(data);
     })
