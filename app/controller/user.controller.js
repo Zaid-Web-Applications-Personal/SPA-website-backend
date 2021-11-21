@@ -30,7 +30,7 @@ exports.create = (req, res) => {
       var token = jwt.sign({ id: user.email }, config.secret, {
         expiresIn: 86400 // expires in 24 hours
       });
-      res.status(200).send({ user: {userId: user.id, username: user.name}, token: token, auth: true});
+      res.status(200).send({ user: {userId: data.id, username: data.name}, token: token, auth: true});
     })
     .catch(err => {
       res.status(500).send({
