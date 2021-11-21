@@ -9,7 +9,7 @@ module.exports = app => {
 
   router.get("/album/:id", project.findAllImages);
 
-  router.get("/:id", project.findAllImages);
+  router.post("/:id", project.findAllImages);
 
   // router.get("/me", VerifyToken, project.me);
 
