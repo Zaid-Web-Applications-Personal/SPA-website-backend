@@ -4,8 +4,8 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
       allowNull: false
     },
-    private: {
-      type: Sequelize.BOOLEAN,
+    image: {
+      type: Sequelize.STRING,
       allowNull: false
     },
     date: {

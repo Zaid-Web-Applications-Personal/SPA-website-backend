@@ -20,7 +20,7 @@ exports.createAlbum = (req, res) => {
   const user = {
     name: req.body.name,
     date: Date.now(),
-    private: req.body.private,
+    iamge: req.body.image,
     userId: req.body.id,
     include: [
       {model: User}
