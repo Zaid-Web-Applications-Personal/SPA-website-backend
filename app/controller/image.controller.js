@@ -27,11 +27,10 @@ exports.createImage = (req, res) => {
     // user: req.body.id,
   };
 
-  console.log(user)
-
   Image.create(user)
     .then(data => {
       res.send(data);
+      console.log(data)
     })
     .catch(err => {
       res.status(500).send({

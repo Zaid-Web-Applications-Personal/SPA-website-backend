@@ -25,7 +25,6 @@ exports.createAlbum = (req, res) => {
     include: [
       {model: User}
     ]
-    // user: req.body.id,
   };
 
   console.log(user)
